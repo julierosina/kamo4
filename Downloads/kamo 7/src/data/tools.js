@@ -1,0 +1,66 @@
+// src/data/tools.js
+// Liste des outils disponibles dans la page Outils
+// Chaque outil est débloqué quand le thème correspondant est complété
+
+export const TOOLS = [
+  {
+    id: 'password-checker',
+    name: 'Vérificateur de force',
+    description: 'Teste la robustesse de ton mot de passe en temps réel',
+    icon: 'ShieldCheck',
+    color: 'var(--kamo-blue-act)',
+    colorLight: '#e8f4ff',
+    unlockedBy: 'banque',
+    unlockedByLabel: 'La Banque',
+  },
+  {
+    id: 'pseudo-gen',
+    name: 'Générateur de pseudonyme',
+    description: 'Génère des pseudonymes créatifs inspirés de l\'espionnage',
+    icon: 'Wand2',
+    color: 'var(--kamo-purple)',
+    colorLight: '#f9eef9',
+    unlockedBy: 'place',
+    unlockedByLabel: 'La Place publique',
+  },
+  {
+    id: 'email-gen',
+    name: "Générateur d'email aléatoire",
+    description: 'Génère des suggestions d\'alias email jetables',
+    icon: 'MailPlus',
+    color: 'var(--kamo-green)',
+    colorLight: '#e8f5ee',
+    unlockedBy: 'labo',
+    unlockedByLabel: 'Le Laboratoire',
+  },
+  {
+    id: 'email-rgpd-access',
+    name: 'Email RGPD — Demande de données',
+    description: 'Modèle d\'email pour demander tes données personnelles',
+    icon: 'FileText',
+    color: 'var(--kamo-teal)',
+    colorLight: '#e0f7f7',
+    unlockedBy: 'place',
+    unlockedByLabel: 'La Place publique',
+  },
+  {
+    id: 'email-rgpd-delete',
+    name: 'Email RGPD — Suppression de données',
+    description: 'Modèle d\'email pour demander la suppression de tes données',
+    icon: 'Trash2',
+    color: 'var(--kamo-orange)',
+    colorLight: '#fff3ea',
+    unlockedBy: 'place',
+    unlockedByLabel: 'La Place publique',
+  },
+  {
+    id: 'email-plainte',
+    name: 'Email — Plainte pour fuite',
+    description: 'Modèle d\'email pour signaler et réclamer suite à une fuite de données',
+    icon: 'AlertTriangle',
+    color: 'var(--kamo-red)',
+    colorLight: '#ffeaea',
+    unlockedBy: 'banque',
+    unlockedByLabel: 'La Banque',
+  },
+]
